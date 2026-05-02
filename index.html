@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Con cariño para ti — Libro</title>
+
+  <!-- Fuente cursiva bonita -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Fondo general (golosinas calle) se define en CSS, archivo: assets/images/golosinas-calle.jpg -->
+    <main class="stage">
+      <div class="book" id="book">
+        <!-- Portada -->
+        <div class="cover" id="cover">
+          <div class="cover-front">
+            <h1 class="title">Con cariño para ti</h1>
+            <p class="subtitle">tocar para abrir</p>
+          </div>
+        </div>
+
+        <!-- Contenedor de páginas -->
+        <div class="pages" id="pages" aria-live="polite"></div>
+
+        <!-- Controles -->
+        <div class="controls">
+          <button id="prevBtn" class="btn" aria-label="Página anterior">Anterior</button>
+          <button id="playAudioBtn" class="btn" aria-label="Reproducir música">▶️</button>
+          <button id="nextBtn" class="btn" aria-label="Siguiente página">Siguiente</button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Audio (colocar assets/audio/musica.mp3 en el repo) -->
+    <audio id="music" src="assets/audio/musica.mp3" loop preload="none"></audio>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
